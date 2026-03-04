@@ -9,8 +9,10 @@ app.use(cors());
 app.use(express.json());
 
 import authRoutes from "./routes/authRoutes.js";
+import biodataRoutes from "./routes/biodataRoutes.js";
 
 app.use("/api/auth", authRoutes);
+app.use("/api/biodata", biodataRoutes);
 
 // Routes
 app.get("/", (req, res) => {
