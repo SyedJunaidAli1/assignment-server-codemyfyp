@@ -14,7 +14,7 @@ app.use("/api/auth", authRoutes);
 
 // Routes
 app.get("/", (req, res) => {
-  res.json({ message: "ShaadiBio API running 🚀" });
+  res.send("ShaadiBio API running 🚀");
 });
 
 export default app;
