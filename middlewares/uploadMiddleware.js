@@ -8,6 +8,9 @@ const storage = new CloudinaryStorage({
     folder: "shaadibio_profiles",
     allowed_formats: ["jpg", "jpeg", "png"],
   },
+  limits: {
+    fileSize: 2 * 1024 * 1024, // 2MB
+  },
 });
 
 const upload = multer({ storage });
