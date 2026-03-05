@@ -10,7 +10,9 @@ app.use(express.json());
 
 import authRoutes from "./routes/authRoutes.js";
 import biodataRoutes from "./routes/biodataRoutes.js";
+import uploadRoutes from "./routes/uploadRoutes.js";
 
+app.use("/api/upload", uploadRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/biodata", biodataRoutes);
 
