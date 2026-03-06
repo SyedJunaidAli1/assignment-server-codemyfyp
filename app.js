@@ -5,7 +5,11 @@ import cors from "cors";
 const app = express();
 
 // Middlewares
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL,
+  }),
+);
 app.use(express.json());
 
 import authRoutes from "./routes/authRoutes.js";
