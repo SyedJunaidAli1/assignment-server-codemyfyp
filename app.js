@@ -21,7 +21,7 @@ app.use("/api/biodata", biodataRoutes);
 
 // Routes
 app.get("/", (req, res) => {
-  res.send("ShaadiBio API running 🚀");
+  res.send("assignment by codemydyp API running 🚀");
 });
 
 export default app;
